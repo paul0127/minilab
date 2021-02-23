@@ -15,7 +15,7 @@
     </div>
     <div id="inUnitTag" class="creatorData">
     	<div class="bg">
-        	<p><span>創作數：123</span><span>作品最愛：123</span><span>創作數：123</span></p>
+        	<p><span>創作數：123</span><span>作品最愛：123</span><span>追蹤數：123</span></p>
         </div>
     </div>
     <div id="mainContents">

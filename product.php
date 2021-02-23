@@ -64,8 +64,8 @@
                 	    <hr>
                 	</div>
                     -->
-                	<a class="read jsbtn"><img src="imgs/icon12.svg"> 注意事項</a>
-                	<a class="read jsbtn"><img src="imgs/icon12.svg"> 什麼是預購?</a>
+                	<a class="read jsbtn"><img src="imgs/icon23.svg"> 注意事項</a>
+                	<a class="read jsbtn"><img src="imgs/icon23.svg"> 什麼是預購?</a>
                 	<hr style="margin-bottom: 9em;">
                 </div>
                 <div class="boxB">

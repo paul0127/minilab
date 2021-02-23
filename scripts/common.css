@@ -3,6 +3,7 @@ html,body,img,p,h1,h2,h3,ul,ol,li,hr,div,a{border:0; margin:0; padding:0; list-s
 input,select,textarea{ font-family: Microsoft JhengHei; font-size: 1em; margin:0; padding: 0.5em; border: #AAA 1px solid; border-radius: 5px; width: calc(100% - 1em - 2px); resize:none;}
 input::placeholder,textarea::placeholder{ color:#CCC;}
 input[type="radio"]{ width:auto;}
+input[type="checkbox"]{ width:auto;}
 hr{clear:both; border:0;}
 body{ background-color:#000;}
 p{ color:#555; line-height:1.6em; text-align:justify;}
@@ -21,7 +22,7 @@ img{ width:100%; display: block;}
 
 
 
-.btnStyleA{ text-align: center; letter-spacing: 0.8em; border: 1px solid #FFF; padding:0.1em 1em; transition:all 0.2s;}   
+.btnStyleA{ text-align: center; letter-spacing: 0.8em; border: 1px solid #FFF; padding:0.1em 1em; transition:all 0.2s; color:#FFF;}   
 .btnStyleA:hover{ background:#FFF; color:#000;}
 
 .btnStyleB{ display:inline-block; background-color:#AAA; color:#FFF; padding:1em 0; transition:all 0.2s; width:8em; font-weight: bold; letter-spacing: 0.2em;}
@@ -41,7 +42,9 @@ a.dlt:hover{background-color: #372f2d;}
 
 /*==============================================*/
 .timer{position: absolute; bottom: 1em; right: 1em; background: rgba(0, 0, 0, 0.85); color: #FFF; padding: 0.3em 0.7em; font-size: 0.6em;}
+.timer::before,.product .infoA span:nth-child(5):before{ content:''; display:inline-block; width:1.5em; height:1.5em; background-image:url(../imgs/icon22.svg); background-size:contain;background-repeat: no-repeat; margin-right: 0.5em; vertical-align: middle;}
 .like{ position: absolute; left: 1em; bottom: 1em; color: #777; font-size: 0.6em;}
+.like::before,.homeCreator li .popularity::before,.product .addfavor::before{ content:''; display:inline-block; width:1.5em; height:1.5em; background-image:url(../imgs/icon24.svg); background-size:contain;background-repeat: no-repeat; margin-right: 0.5em; vertical-align: middle;}
 .moreBtn{padding: 1.5em;}
 
 #rightMenu{ position:fixed; top:0; right:0; width:2em; height:100%; background-color:#372f2d; z-index:99999;}
@@ -52,8 +55,9 @@ a.dlt:hover{background-color: #372f2d;}
 #topLogo img{ position:absolute; top:50%; left:50%; transform:translate(-50%,-50%); width:auto; height:70%;}
 
 #mainBn{ position:relative; height: 80vh; background-color: #333;}
-#mainBn .box{ position:relative; background-position:center top; background-size:cover; width:100%; height:100%;}
-#mainBn .styleA{ background-image:url(../pics/pic1.jpg);}
+#mainBn ul{ height: 100%;}
+#mainBn li.box{ position:relative; background-position:center center; background-size:cover; width:100%; height:100%; float:left;}
+
 #mainBn .styleA .infoBox{position: absolute; top: 50%; left: 2em; color: #FFF; transform: translateY(-50%);}
 #mainBn .styleA h1{font-size: 3em; line-height: 0.8em;}
 #mainBn .styleA h1 b{font-size: 0.47em;}
@@ -95,6 +99,7 @@ a.dlt:hover{background-color: #372f2d;}
 #footer .footMenu a{ display:inline-block; margin:0 1em;}
 #footer .coopyright{ font-size:14px;}
 #inBanner{ position:relative; height: 30vw; background-color: #000; overflow: hidden;}
+#inBanner img.centerAlign{ opacity:0; transition:opacity 0.3s}
 #inBanner .title{ position:absolute; bottom:-0.1em; left:0; font-size:7em; color:#FFF; line-height: 1em; font-weight:bold;}
 #inBanner.blackBg img{-webkit-filter:blur(5px);}
 #inBanner.blackBg:after{ content:''; display:block; background-color: rgba(0,0,0,0.5); height: 100%;width: 100%; position: absolute; top: 0; left: 0;}
@@ -110,7 +115,7 @@ a.dlt:hover{background-color: #372f2d;}
 #inUnitTag span{font-size: 0.5em;}
 #inUnitTag .data{ color: #FFF; font-size: 0.8em; margin-right: 3em;}
 #inUnitTag .icon{ width: 1.5em; display: inline-block; vertical-align: middle; margin-right: 0.5em;}
-#inUnitTag .fbpfinger{ background-color: aqua; left: auto; right: 5em;}
+#inUnitTag .fbpfinger{ background-color: aqua; left: auto; right: 5em; display: none;}
 
 #inUnitTag.creator{background-color: #2b7d9b;}
 #inUnitTag.creator .bg:after{background-color: #3392b5;}
@@ -232,7 +237,6 @@ a.dlt:hover{background-color: #372f2d;}
 .product .infoA span:nth-child(3):before{ content:'截止預購：';}
 .product .infoA span:nth-child(4):before{ content:'預計發貨月份：';}
 .product .infoA span:nth-child(5){ position:absolute;right: 0; bottom: 0; font-size:2em; width: auto;}
-.product .infoA span:nth-child(5):before{ content:''; display:inline-block; width:1em; height:1em; background:url(imgs/icon14.svg) no-repeat; background-size:contain;}
 .product .infoB{background-color: #FFF; margin-bottom: 1em; font-size: 1.3em;}
 .product .infoB div{ float:left; width:50%;}
 .product .infoB span{ line-height:1.6em; color:#000; display:block; float: left; font-weight:bold;}
@@ -283,6 +287,10 @@ a.dlt:hover{background-color: #372f2d;}
 .creatorInfo h3{font-size: 2em;}
 .creatorInfo a{ display:inline-block; padding:0.2em 1em; border-radius:2em; border:2px #fff solid;margin-top: 0.3em;}
 .creatorData span{ display: inline-block; margin-right: 5vw;}
+.creatorData span::before{ content:''; display:inline-block; width:1.5em; height:1.5em; background-size:contain;background-repeat: no-repeat; margin-right: 0.5em; vertical-align: middle;}
+.creatorData span:nth-child(1)::before{ background-image:url(../imgs/icon12.svg);}
+.creatorData span:nth-child(2)::before{ background-image:url(../imgs/icon25.svg);}
+.creatorData span:nth-child(3)::before{ background-image:url(../imgs/icon13.svg);}
 .acreator .works{ width:66%; float:left;}
 .acreator .interduction{ float:right; width:calc(34% - 3%); padding:0 1.5% 1em;}
 .acreator .interduction .title{ background-color:#372f2d; padding:1em; color:#FFF; margin-bottom:1em;}
@@ -374,8 +382,11 @@ a.dlt:hover{background-color: #372f2d;}
 .member.creator .frombox .edit1 textarea.introduction{ height:10em;}
 .member.creator .frombox .edit2 td{border-bottom: 1px solid #bfbfbf;}
 .member.creator .frombox .edit2 td:nth-child(odd){ background-color:#EEE;}
-.member.creator .frombox .maskInfo{ margin:0.5em 0; overflow:hidden; height: 0px;}
+.member.creator .frombox .maskInfo{ display:none;}
 .member.creator .frombox .infoBtn{display: block; margin: 0; padding: 0.5em; width: calc(100% - 1em);}
+.member.creator .frombox table.joinCreator td:nth-child(1){ width:9em; text-align: right;}
+.member.creator .frombox table .start::before{ content:'* '; color:#C00; font-weight:bold;}
+.member.creator .frombox table td b{ color:#369; font-weight:400; font-size:0.9em;}
 .member.creator .groupBtn{margin-bottom: 1em;}
 .member.creator .groupBtn a.use{background-color: #3392b5;}
 .member.creator .faq td.unread::after{ content:''; background-image:url(../imgs/icon15.svg);}
@@ -400,6 +411,14 @@ a.dlt:hover{background-color: #372f2d;}
 .member.creator .newEdit a.add{background-color: #aaaaaa; display: block; width: 2em; border-radius: 2em; margin: 0.5em auto;}
 .member.creator .newEdit a.add:hover{background-color: #888}
 
+.member.creator .creatStep{ position:relative; margin-bottom: 3em; font-size: 0.9em;}
+.member.creator .creatStep span{ position:relative; border: 1px solid #6d6462; padding: 0.5em 0; width: 6em; display: inline-block; background-color:#FFF; border-radius: 7em; margin: 0 3vw; z-index:1;}
+.member.creator .creatStep span.use{background-color: #6d6462; color: #FFF;}
+.member.creator .creatStep span.complete{background-color: #CCC;}
+.member.creator .creatStep hr{ border-bottom:1px solid #6d6462; width: 22em;}
+
+
+
 .declaration .mask{ margin: 0.5em auto 1.5em; overflow-y: scroll; width: 43em; max-width: calc(100% - 2em); height: 10em; padding: 3em 1em; border: 1px #999 solid;}
 .declaration .check{ width: 45em; max-width: 100%; margin: auto;}
 .declaration .check{margin-bottom: 1em;}
@@ -407,6 +426,7 @@ a.dlt:hover{background-color: #372f2d;}
 .declaration .check span{ display:inline-block; padding:1em 0;}
 .declaration .check input{ width:auto; display: inline-block;}
 .remarks{ background-color: #9A166C; padding: 1.5em; margin: 2em 0;}
+.remarks a{margin-top: 1em;}
 .remarks.yel{ background-color:#e1972b;}
 .remarks.gre{ background-color:#8aaa66;}
 .remarks.blu{ background-color:#006ab4}
@@ -439,6 +459,7 @@ a.dlt:hover{background-color: #372f2d;}
 .shop .summary .iteam .pic{width: 4em; height: 4em; float: left; background: center center no-repeat #FFF; background-size: contain;margin-right: 0.5em;}
 .shop .summary .iteam .info{font-size: 0.85em;}
 .shop .summary .total span{ float: right; font-weight: bold;}
+.shop .summary .explanation a::before{ content:''; display:inline-block; width:1em; height:1.2em; background-image:url(../imgs/icon26.svg); background-size:contain;background-repeat: no-repeat; margin-right: 0.5em; vertical-align: middle;}
 .shop .step{ border-top: 1px solid #6d6462; width: calc(100% - 22em); padding: 1em;}
 .shop .step > div{ display: inline-block; width: 7em; font-weight: bold; vertical-align:middle; text-align:left;}
 
@@ -448,9 +469,10 @@ a.dlt:hover{background-color: #372f2d;}
 .shop table select{ width:100%; max-width: 25em;}
 .shop table input[type="text"]{ width:calc(100% - 2px - 1em); max-width: calc(25em - 2px - 1em);}
 
+
 .member .frombox{ width: calc(100% - 22em); padding: 1em; max-width: 35em; margin:0 auto 4em;}
 .member .frombox table{ border-left: none;}
-.member .frombox input:disabled { background: #f1f1f1; cursor: not-allowed;}
+.member .frombox input:disabled { background: #f1f1f1; border: none; cursor: not-allowed;}
 
 .shop .from0 select{ width:15em}
 .shop .from1 p{ font-size: 0.9em; font-weight: bold; margin-top: 0.4em;}
@@ -462,11 +484,11 @@ a.dlt:hover{background-color: #372f2d;}
 .shop .from3 tr:nth-child(5) span{ font-size:0.9em;}
 .shop .statement{ line-height: 1.8em; margin: 2em 0 1em;}
 .shop .statement span{ color:#906; font-weight:bold;}
-.shop .check{line-height: 1.5em; display: inline-block; border: 1px solid #dbdbdb; padding: 1.5em 5em; margin-bottom:2em;}
 .shop .orderNumber{ text-align:center;}
 .shop .deliveryInfo{ border: 1px solid #ccc; padding: 1em; margin-bottom:2em;}
-.shop .deliveryInfo table{ border-top: 1px solid #ccc; width: 100%; text-align: left; padding: 1.5em;}
+.shop .deliveryInfo table{ border-top: 1px solid #ccc; width: 100%; text-align: left; padding: 1.5em; border-left: none;}
 .shop .deliveryInfo td{width: 50%; padding: 0.3em;}
+.shop .deliveryInfo td[colspan="2"]{text-align: center;}
 
 .terms .ctns{ max-width:50em !important;}
 .terms ul{ margin:0.5em 0;} 
@@ -483,11 +505,24 @@ a.dlt:hover{background-color: #372f2d;}
 .productForm .name{ font-weight:bold; font-size:1.1em; color: #666;}
 .productForm .info{ font-size:0.9em;}
 .productForm strong{ color: #FFF; padding: 0 0.5em; text-align: center; border-radius: 5px;}
-.productForm .verify1 strong,.productForm .verify2 strong{ background-color:#cd4848;}
-.productForm .verify3 strong,.productForm .status1 strong{ background-color:#8aaa66;}
-.productForm .status2 strong,.productForm .status3 strong{ background-color:#006ab4;}
-.productForm .status4 strong{ background-color:#999;}
-.productForm .verify4 strong{ background-color:#e1972b;}
+.productForm .status1 strong{ background-color:#e1972b;}
+.productForm .status2 strong,.productForm .status3 strong{ background-color:#cd4848;}
+.productForm .status4 strong,.productForm .status5 strong{ background-color:#8aaa66;}
+.productForm .status6 strong,.productForm .status7 strong{ background-color:#006ab4;}
+.productForm .status8 strong{ background-color:#999;}
+
+.becomeCreators{ padding:0 3em !important;}
+.becomeCreators h1{ margin-bottom:1em; color:#3392b5;}
+.becomeCreators > p{ margin-bottom:5em;}
+.becomeCreators .joinstep{width: 75%; margin-bottom: 6em;}
+.becomeCreators .joinstep:nth-child(even){float: right;}
+.becomeCreators .joinstep img{ max-width: 60%; width: 20em; margin: 0 2em 0 0; display: inline-block; vertical-align: middle;}
+.becomeCreators .joinstep strong{color: #3392b5; font-size: 2em; margin: 0.5em 0; display: inline-block; line-height: 1.3em;}
+.becomeCreators .joinstep b{background-color: #3392b5; color: #FFF; padding: 0.5em 1em; border-radius: 10em;}
+.becomeCreators .joinstep p{width: calc(100% - 23em); display: inline-block; vertical-align: middle;}
+.joinBtn{ position:relative; text-align: center; padding:12em 0; background:url(../imgs/img1.jpg) center; background-size:cover;}
+.joinBtn::after{ content: ''; position: absolute; width: calc(100% - 6em); height: calc(100% - 6em); background-color: rgba(55,47,45,0.8); left: 50%; top: 50%; transform: translate(-50%,-50%);}
+.joinBtn a{font-size: 2em; font-weight: 100; position: relative; z-index: 1;}
 
 @media only screen and (max-width: 1024px){
 .landingBanner.backSupport:after{ padding-top:50%;}
@@ -555,6 +590,13 @@ a.dlt:hover{background-color: #372f2d;}
 .productForm td:nth-child(3):before{ content:'數量：';}
 .productForm td:nth-child(4):before{ content:'單價：';}
 .productForm td:nth-child(5):before{ content:'合計：';}
+
+.becomeCreators h1 br{ display:none;}
+.becomeCreators .joinstep { width: 100%;}
+.becomeCreators .joinstep img {display: block; margin:0 auto 3em;}
+.becomeCreators .joinstep strong{font-size: 1.6em;}
+.becomeCreators .joinstep p{ width:auto; text-align: center;}
+.joinBtn a {font-size: 1.4em;}
 
 }
 

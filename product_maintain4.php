@@ -20,15 +20,44 @@
                 <span>內容管理</span>
             </div>
             
-            <div class="remarks yel">
-            	<p>資料審核中．．．</p>
+            <div><a class="btnStyleC">確認作品預購績效</a>　　<a class="btnStyleC">下載訂購人資料明細</a></div>
+            
+            
+            <!------step製作中------>
+            <div class="remarks blu">
+            	<p>預購已結束，商品已進入製作階段，請確定依照生產方式描述進行製作並於指定出貨月份以前完成生產</p>
+                <a class="btnStyleC jsbtn">已完成製作，開始進行商品寄送</a>
             </div>
-            <div class="remarks gre">
-            	<p>等待開放預購！</p>
+            <div class="creatStep">
+            	<span class="use">製作中</span>
+                <span>發貨中</span>
+                <span>完成訂單</span>
+                <hr class="centerAlign">
             </div>
-            <div class="remarks gre">
-                <p>商品預購中...</p>
+            
+            <!------step發貨中------>
+            <div class="remarks blu">
+            	<p>商品寄送進行中……</p>
+                <a class="btnStyleC jsbtn">確認已完成商品寄送</a>
             </div>
+            <div class="creatStep">
+            	<span class="complete">製作中</span>
+                <span class="use">發貨中</span>
+                <span>完成訂單</span>
+                <hr class="centerAlign">
+            </div>
+            
+            <!------step完成訂單------>
+            <div class="remarks blu">
+            	<p>進入保固階段，請多留意商品提問留言</p>
+            </div>
+            <div class="creatStep">
+            	<span class="complete">製作中</span>
+                <span class="complete">發貨中</span>
+                <span class="use">完成訂單</span>
+                <hr class="centerAlign">
+            </div>
+            <!-----stepEND------>
             
             <h3>作品資料</h3>
             <div class="newEdit">
@@ -108,7 +137,8 @@
                         </tr>
                     </table>
                     <hr>
-                </div>   
+                </div> 
+                 
             </div>
             <div>產品已審核完成，需要再次調整內容，請使用留言功能與站台管理人聯繫，謝謝。</div> 
         </div>

@@ -105,7 +105,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status1"><strong>預購中</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status5"><strong>預購中</strong><br><a href="product_maintain3.php" class="sbtnStyleA">內容管理</a></td>
                 </tr>
                 <tr>
                     <td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -115,7 +115,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status2"><strong>製作中</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status6"><strong>製作中</strong><br><a href="product_maintain4.php" class="sbtnStyleA">內容管理</a></td>
                 </tr>
                 <tr>
                     <td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -125,7 +125,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status3"><strong>發貨中</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status7"><strong>發貨中</strong><br><a href="product_maintain4.php" class="sbtnStyleA">內容管理</a></td>
                 </tr>
             </table>
             <h3>申請中的創作</h3>
@@ -148,7 +148,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="verify1"><strong>審核中</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status3"><strong>審核中</strong><br><a href="product_maintain3.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
                 <tr>
                 	<td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -158,7 +158,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="verify2"><strong>未通過審核</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status2"><strong>未通過審核</strong><br><a href="product_maintain2.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
                 <tr>
                 	<td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -168,7 +168,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="verify3"><strong>等待預購</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status4"><strong>等待預購</strong><br><a href="product_maintain3.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
             </table>
              

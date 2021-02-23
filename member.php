@@ -43,7 +43,7 @@
                     <td class="price">500</td>
                     <td class="price">500</td>
                     <td>2020.12.31</td>
-                    <td class="status">預購中<br><a href="member_order_details.php" class="sbtnStyleA">查看訂單明細</a></td>
+                    <td class="status5"><strong>預購中</strong><br><a href="member_order_details.php" class="sbtnStyleA">查看訂單明細</a></td>
             	</tr>
                 <tr>
                 	<td><div class="imgBox" style="background-image:url(pics/pic3.jpg);"></div></td>
@@ -52,7 +52,7 @@
                     <td class="price">500</td>
                     <td class="price">1000</td>
                     <td>2020.12.31</td>
-                    <td class="status">截止預定製作中<br><a href="member_order_details.php" class="sbtnStyleA">查看訂單明細</a></td>
+                    <td class="status6"><strong>製作中</strong><br><a href="member_order_details.php" class="sbtnStyleA">查看訂單明細</a></td>
             	</tr>
             </tbody></table>
             

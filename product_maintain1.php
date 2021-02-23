@@ -16,7 +16,8 @@
             
             <div id="breadcrumb">
             	<a href="creator_member.php" class="sbtnStyleA">創作者專區</a>
-                <span>申請創作</span>
+                <a href="creator_product_on.php" class="sbtnStyleA">創作品管理</a>
+                <span>內容管理</span>
             </div>
             
             <h3>作品資料</h3>
@@ -55,7 +56,7 @@
                 </div>
                 <hr>
                 <div>
-                   	<h4>生產方式</h4>
+                   	<h4>生產方式<b style="font-size:0.9em; opacity:0.8;">（※僅提供審查人員確認）</b></h4>
                    	<p>請說明預計生產的流程方式。如不了解生產方式或程序，請在內容留下需要協助訊息。說明內容不超過300個字元。</p>
                    	<textarea name="" cols="" rows="" placeholder="輸入文字"></textarea>
                 </div>

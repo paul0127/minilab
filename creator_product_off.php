@@ -44,7 +44,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status4"><strong>已完成</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status8"><strong>已完成</strong><br><a href="product_maintain4.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
                 <tr>
                     <td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -54,7 +54,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status4"><strong>已完成</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status8"><strong>已完成</strong><br><a href="product_maintain4.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
                 <tr>
                     <td><div class="imgBox" style="background-image:url(pics/pic4.jpg);"></div></td>
@@ -64,7 +64,7 @@
                     <td>100</td>
                     <td>2020-12-31</td>
                     <td>2021-4-31</td>
-                    <td class="status4"><strong>已完成</strong><br><a href="product_maintain.php" class="sbtnStyleA">內容管理</a></td>
+                    <td class="status8"><strong>已完成</strong><br><a href="product_maintain4.php" class="sbtnStyleA">內容管理</a></td>
             	</tr>
             </table>
             <div class="morePage">

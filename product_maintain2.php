@@ -16,7 +16,8 @@
             
             <div id="breadcrumb">
             	<a href="creator_member.php" class="sbtnStyleA">創作者專區</a>
-                <span>申請創作</span>
+                <a href="creator_product_on.php" class="sbtnStyleA">創作品管理</a>
+                <span>內容管理</span>
             </div>
             
             <div class="remarks">

@@ -99,7 +99,7 @@
             <div class="orther">
             	<h3>意見回饋</h3>
                 <p>若找不到問題解答或商品、流程上有所建議，請至<b>我的留言</b>提出</p>
-                <a class="btnStyleB" href="#">我的留言</a>
+                <a class="btnStyleB" href="member_message.php">我的留言</a>
             </div>
         </div>
     </div>
